@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 
 const _dirname = path.resolve();
 const app = express();
-const port = process.env.PORT || 3300;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -78,7 +78,7 @@ const { first_name, email, password } = req.body;
 
 
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0",() => {
 
     console.log(`Server is running on port ${port}.`);
 

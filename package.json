@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Chigemezu Emmanuel",
-  "license": "ISC",
+  "license": "",
   "description": "My Express.js Practical",
   "dependencies": {
     "bcrypt": "^6.0.0",

@@ -17,21 +17,23 @@ function changeBackGroundColorToWhite() {
 
 }
 
+const head = document.body.getElementById("time1");
 
-time_Element = document.getElementById("time");
 
 const current_time = new Date();
 
-if (current_time.getUTCHours() >= 1 && current_time.getUTCHours() <= 11) {
+if (current_time.getUTCHours() >= 1 && current_time.getUTCHours() < 12) {
 
 
-time_Element.innerHTML = "Good morning!";
+head.innerHTML = "Good morning!";
 
+
+}else if(current_time.getUTCHours() >= 12 && current_time.getUTCHours() < 16){
+
+ head.innerHTML = "Good afternoon!";
 
 }else{
 
-    time_Element.innerHTML = "This is not morning.";
+   head.innerHTML = "Good evening!"; 
 }
 
-document.body.style.backgroundImage = "url('c:\Users\KEVIN MAGNUS\Downloads\IMG-20250715-WA0012.jpg')";
-document.body.style.backgroundSize = "cover";

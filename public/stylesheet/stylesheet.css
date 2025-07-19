@@ -14,11 +14,11 @@ body {
 
 h1 {
 
-    color: rgba(3, 75, 69, 0.596);
+    color: rgba(24, 116, 108, 0.596);
 }
 
 div {
-
+    width: auto;
     border: solid 5px yellowgreen;
     border-radius: 30px;
     margin: 30px;
@@ -73,4 +73,13 @@ position: left;
 .intro {
 
     color: orange;
+}
+
+.log-in-push {
+
+    width: auto;
+}
+
+#time1 {
+    color: turquoise;
 }
