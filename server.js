@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 
 const _dirname = path.resolve();
 const app = express();
-const port = 3300;
+const port = process.env.PORT || 3300;
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true}));
