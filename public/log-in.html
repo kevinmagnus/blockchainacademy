@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> YouthDrive Log In</title>
+    <link rel = "stylesheet" href="stylesheet/stylesheet.css">
+</head>
+<body>
+
+    <button onclick = "changeBackGroundColorToWhite()"> White theme </button>  <button onclick = "changeBackGroundColorToBlack()"> Black theme </button>
+
+    <nav>
+        <li>
+
+            <a href = "/"> Home </a>
+        </li>
+
+    </nav>
+
+    <div>
+        
+        <form method = "POST" action = "/log-in">
+
+        <h2>
+            Log In:
+        </h2>
+
+        <label for = "email"> Enter your email: </label>
+
+        <br>
+
+        <input type = "email" name = "email" placeholder="Enter email address">
+
+        <br>
+
+        <label for = "user_name">Enter your user name: </label>
+
+        <br>
+
+        <input type = "text" name = "user_name" placeholder="Enter your user name" required>
+
+        <br>
+
+        <label for = "password"> Enter your password: </label>
+
+        <br>
+
+        <input type = "password" name = "password" placeholder="Enter password">
+
+        <br>
+
+        <input type = "submit" value = "Log in" class = "submit-button" class = "submit-button">
+
+    </form>
+
+    <p> Don't have an account? <a href = "/create-account">Sign Up  </a> </p>
+
+    </div>
+
+<script src = "change-color.js">
+</script>
+</body>
+</html>

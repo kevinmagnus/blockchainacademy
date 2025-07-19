@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthDrive Create Account </title>
+    <link rel = "stylesheet" href="stylesheet/stylesheet.css">
+</head>
+<body>
+
+    <button onclick = "changeBackGroundColorToWhite()"> White theme </button>  <button onclick = "changeBackGroundColorToBlack()"> Black theme </button>
+   
+<nav>
+
+    <ul>
+<li>
+
+    <a href = "/"> Home </a>
+
+</li>
+
+</ul>
+
+</nav>
+
+    <div>
+
+   <form method = "POST" action = "/create-account">
+
+    <h1>
+        Create Account:
+    </h1>
+
+    <label for = "first_name">Enter your first name: </label>
+    <br>
+    <input type = "text" name = "first_name" placeholder="Enter your  first name" required>
+<br>
+<label for = "last_name"> Enter your last name: </label>
+<br>
+<input type = "text" name = "last_name" placeholder="Enter your last name" required>
+<br>
+<label for = "email" >Enter your email address: </label>
+<br>
+<input type = "email" name = "email" placeholder="Enter your email" required>
+<br>
+<label for = "dateOfBirth">Enter your date of birth: </label>
+<br>
+<input type = "date" name = "dateOfBirth" placeholder='Enter your date of birth:' required>
+<br>
+<label for = "password"> Enter your password:
+</label>
+<br>
+<input type = "password" placeholder="Enter your password" name = "password" required>
+<br>
+<!-- 
+<label for = "confirm_password">Confirm your password: </label>
+<br>
+<input type = "password" name = "confirm_password" placeholder="Re-enter your password">
+<br> -->
+<input class = "submit-button" type = "submit" value = "Sign up">
+<br>
+
+   </form>
+<br>
+Or 
+<a href = "/log-in"> Log In </a> instead.
+   </div>
+   
+   <script src = "change-color.js">
+
+   </script>
+</body>
+</html>

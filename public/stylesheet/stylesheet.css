@@ -1,0 +1,76 @@
+body {
+
+    background-color: black;
+    color: rgb(54, 112, 54);
+    text-align: center;
+
+    background: black
+            url("/IMG-20250715-WA0012.jpg") no-repeat fixed 
+            center;
+
+    
+    
+}
+
+h1 {
+
+    color: rgba(3, 75, 69, 0.596);
+}
+
+div {
+
+    border: solid 5px yellowgreen;
+    border-radius: 30px;
+    margin: 30px;
+    background-color: rgb(8, 33, 48);
+}
+
+.submit-button {
+
+    background-color: rgba(138, 255, 153, 0.432);
+    width: 10%;
+    border-radius: 30px;
+    color: turquoise;
+    margin: 20px;
+    border: solid 5px rgb(36, 28, 87);
+    font-size: 15px;
+}
+
+a {
+    color: darkorchid;
+}
+
+input {
+    margin: 10px;
+}
+
+#yoloConnect-mission {
+
+    color: rgb(50, 205, 109);
+}
+
+nav {
+
+    text-align: left;
+}
+
+#dashoard-welcome-heading {
+
+    color: turquoise;
+}
+
+.change-theme-color-button {
+
+position: left;
+
+}
+
+#welcome {
+
+    color:rgb(32, 143, 106);
+}
+
+.intro {
+
+    color: orange;
+}
