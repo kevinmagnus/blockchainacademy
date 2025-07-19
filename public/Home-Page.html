@@ -3,20 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouthDrive Home Page</title>
+    <title> Hit Bank.com Home Page</title>
     <link rel ="stylesheet" href = "stylesheet/stylesheet.css">
-    
+
+    <script>
+   function changeBackGroundColorToWhite() {
+
+    const body = document.body;
+
+    body.style.backgroundColor = "white";
+
+}
+
+
+ function changeBackGroundColorToBlack() {
+
+    const body = document.body;
+
+    body.style.backgroundColor = "black";
+
+}
+
+
+
+function greet() {
+
+    const hour = new Date().getHours();
+    let greeting;
+
+    if(hour<12) {
+
+        greeting = "Good Morning!";
+
+    }else if(hour >=12 & hour < 16) {
+
+        greeting = "Good Afternoon";
+
+    }else{
+
+        greeting = "Good Evening";
+    }
+
+    return greeting;
+
+}
+
+document.getElementById("time1").innerHTML = greet() +", Welcome to HitBank.com!";
+
+</script>
 </head>
 <body>
-<h1 id = "time"> </h1>
+<h1 id = "time1"> </h1>
 
-<h1 class = "intro"> Emmanuel Chigemezu is adding more features.</h1>
+<h2 class = "intro"> Emmanuel Chigemezu is adding more features.</h2>
     
-<!-- <button onclick = "changeBackGroundColorToWhite()"> White theme </button>  <button onclick = "changeBackGroundColorToBlack()"> Black theme </button>
---> 
+ <button onclick = "changeBackGroundColorToWhite()"> White theme </button>  <button onclick = "changeBackGroundColorToBlack()"> Black theme </button>
+
 <div>
 
-<h1> Welcome to HitBank.com! </h1> 
+
    
    <p class = "yoloConnect-mission">
     ...Music is life.
@@ -56,9 +101,21 @@
         New here? <a href = "/create-account.html"> Sign Up </a>
     </p>
 -->
-    <a href="/Don-Moen-Ft-Frank-Edwards-Hallelujah-(TrendyBeatz.com).mp3" download>Frank Edward- Halleluyah Download</a>
+    <a href="/Don-Moen-Ft-Frank-Edwards-Hallelujah-(TrendyBeatz.com).mp3" download>Frank Edward- Halleluyah MP3 Download</a>
   <br>
+  <a href = "/Frank Edward - You alone_hitbank.com.mp3" download> Frank Edward- You alone MP3 Download</a>
+  <br>
+  <a href = "Frank-Edwards-Oghene-Doh-(hitbank.com).mp3" download> Frank Edward- Oghene Do MP3 Download </a>
+  <br>
+  <a href = "/Frank Edward- Melody_hitbank.com.mp3" download>Frank Edward- Melody MP3 Download </a>
+<br> 
+<a href = "/Frank-Edwards-Love-(TrendyBeatz.com).mp3" download> Frank Edward- Love MP3 Download </a>
 
+<br>
+<p>
+<iframe src = "VID-20250719-WA0008.mp4" allowfullscreen> Precious and Co. Dancers MP4 </iframe>
+</p>
+<br>
 </div>
 
    <div>
@@ -78,9 +135,5 @@ Hit Bank.com 2025
    
 
 <p class="intro"> Website's code written by Emmanuel Chigemezu </p>
-<script>
-  const form = document.getElementById("log-in-form");
-    form.reset();
-</script>
 </body>
 </html>
