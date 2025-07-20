@@ -5,8 +5,7 @@ body {
     text-align: center;
 
     background: black
-            url("/IMG-20250715-WA0012.jpg") no-repeat auto
-            center;
+            url("/IMG-20250715-WA0012.jpg") no-repeat auto center;
 
     
     
@@ -14,7 +13,7 @@ body {
 
 h1 {
 
-    color: rgba(24, 116, 108, 0.596);
+    color: rgba(140, 224, 217, 0.596);
 }
 
 div {
@@ -87,3 +86,5 @@ position: left;
 #time1 {
     color: turquoise;
 }
+
+ 
