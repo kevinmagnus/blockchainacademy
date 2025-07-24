@@ -60,6 +60,28 @@
     <p> Don't have an account? <a href = "/create-account">Sign Up  </a> </p>
 
     </div>
+<script>
+
+        const heading = document.getElementById("news");
+
+    const url = 'https://api.worldnewsapi.com/search-news?text=earth+quake&language=en&earliest-publish-date=2024-04-01';
+const apiKey = "a65e3907a3114f75a3af0893c9934f73"
+
+fetch(url, {
+    method: 'GET',
+    headers: {
+        'x-api-key': apiKey
+    }
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+})
+.then( data => heading.innerHTML = data)
+.catch(error => console.error('There was a problem with the fetch operation:', error));
+</script>
 
 
 </body>

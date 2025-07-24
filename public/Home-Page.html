@@ -6,39 +6,11 @@
     <title> Hit Bank.com Home Page</title>
     <link rel ="stylesheet" href = "stylesheet/stylesheet.css">
 
-    <script>
-   function changeBackGroundColorToWhite() {
-
-    const body = document.body;
-
-    body.style.backgroundColor = "white";
-
-}
-
-
- function changeBackGroundColorToBlack() {
-
-    const body = document.body;
-
-    body.style.backgroundColor = "black";
-
-}
-
-const element = doument.getElementById("time1");
-
-element.innerText = "Hello";
-
-    
-    
-</script>
-
 </head>
 <body>
-    <h1 id = "time1"> </h1>
+    <h1 id = "head-1"> </h1>
 
-<h1>
-Welcome to HitBank.com!
-</h1>
+
 
 <h3 class = "intro"> Emmanuel Chigemezu is writing codes for more dynamic features.</h3>
 
@@ -59,7 +31,7 @@ Welcome to HitBank.com!
    <input type = "search" placeholder="search"> 
 <br>
    </div>
-<!--
+
    <div>
 
     <form method = "POST" action = "/log-in" id="log-in-form">
@@ -91,26 +63,14 @@ Welcome to HitBank.com!
     <p>
         New here? <a href = "/create-account.html"> Sign Up </a>
     </p>
--->
 
-<div>
 
-    <a href="/Don-Moen-Ft-Frank-Edwards-Hallelujah-(TrendyBeatz.com).mp3" download>Frank Edward- Halleluyah MP3 Download</a>
-  <br>
-  <a href = "/Frank Edward - You alone_hitbank.com.mp3" download> Frank Edward- You alone MP3 Download</a>
-  <br>
-  <a href = "Frank-Edwards-Oghene-Doh-(hitbank.com).mp3" download> Frank Edward- Oghene Do MP3 Download </a>
-  <br>
-  <a href = "/Frank Edward- Melody_hitbank.com.mp3" download>Frank Edward- Melody MP3 Download </a>
-<br> 
-<a href = "/Frank-Edwards-Love-(TrendyBeatz.com).mp3" download> Frank Edward- Love MP3 Download </a>
 
-<br>
-
-<iframe src = "/VID-20250719-WA0008.mp4"  allowfullscreen title="Precious and Co Dancing" download>
-
-<br>
 </div>
+<br>
+
+
+
 
    <div>
     <h3>
@@ -131,6 +91,40 @@ Hit Bank.com 2025
 <p class="intro"> Website's code written by Emmanuel Chigemezu </p>
 
 </div>
+<script>
 
+        const time = document.getElementById("head-1");
+
+
+        function greet() {
+
+
+            const hour = new Date().getHours();
+
+
+            if( hour >= 0 && hour <= 4 )  {
+
+
+                console.log("It's a new day! Welcome to our website.");
+
+            }else if( hour > 4 && hour < 12 ) {
+
+
+                console.log("Hello, Good morning! Welcome to our website.");
+
+            }else if(hour >= 12 && hour < 16) {
+
+            console.log("Hello, Good Afternoon! Welcome to our website.");
+
+            }else{
+
+                console.log("Hello, Good Evening! Welcome to our website.");
+            }
+
+        }
+
+        greet();
+
+    </script>
 </body>
 </html>

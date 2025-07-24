@@ -5,7 +5,8 @@ import bodyParser from "body-parser";
 
 const _dirname = path.resolve();
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3800;
+
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -74,6 +75,7 @@ const { first_name, email, password } = req.body;
 
 
 });
+
 
 
 

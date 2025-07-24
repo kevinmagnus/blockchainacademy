@@ -1,11 +1,10 @@
 body {
 
     background-color: black;
-    color: rgb(54, 112, 54);
+    color: white;
     text-align: center;
 
-    background: black
-            url("/IMG-20250715-WA0012.jpg") no-repeat auto center;
+    background: white; url:("/hitbank.jpeg") no-repeat auto center;
 
     
     
@@ -13,7 +12,7 @@ body {
 
 h1 {
 
-    color: rgba(140, 224, 217, 0.596);
+    color: white;
 }
 
 div {
@@ -26,6 +25,7 @@ div {
 
 a {
     color:turquoise;
+    border: 70px;
 }
 
 .submit-button {
@@ -39,9 +39,6 @@ a {
     font-size: 15px;
 }
 
-a {
-    color: darkorchid;
-}
 
 input {
     margin: 10px;
@@ -83,8 +80,8 @@ position: left;
     width: auto;
 }
 
-#time1 {
-    color: turquoise;
+#head-1 {
+    color: white;
 }
 
  
