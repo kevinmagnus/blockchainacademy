@@ -89,7 +89,7 @@ position: left;
 
     font-family: Arial, sans-serif;
     font-size: 24px;
-    color: rgb(41, 187, 97);
+    color: darkorchid;
     text-align: center;
     opacity: 0;
     animation: fade 5s infinite;
