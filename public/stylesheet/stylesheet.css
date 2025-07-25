@@ -41,8 +41,9 @@ a {
 }
 
 
-input {
+input:focus {
     margin: 10px;
+    color:aliceblue;
     
 }
 
