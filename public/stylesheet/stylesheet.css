@@ -78,13 +78,28 @@ position: left;
     color: orange;
 }
 
-.log-in-push {
 
-    width: auto;
-}
 
 #head-1 {
     color: white;
 }
 
  
+.fade-text {
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(139, 32, 139);
+    text-align: center;
+    opacity: 0;
+    animation: fade 5s infinite;
+
+}
+
+@keyframes fade {
+
+    0% { opacity: 0;}
+    20% { opacity: 1;}
+    80% { opacity: 1;}
+    100% {opacity: 0;}
+}

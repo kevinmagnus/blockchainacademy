@@ -81,3 +81,33 @@ function show_website_creation_days() {
 }
 
 setTimeout( show_website_creation_days() , 1000);
+
+
+const textElement = document.querySelector(".fade-text");
+
+const texts = [ 
+
+    "Welcome to HitBank.com!", 
+    "From Emmanuel Chigemezu, The Guru Behind the Code",
+    "...We are the music bank!",
+    "Download all your music here!",
+    "Have wonderful experience!"
+
+
+];
+
+let index = 0;
+
+
+function changeText() {
+
+    textElement.textContent = texts[index];
+
+    index = (index + 1) % texts.length;
+
+
+}
+
+changeText();
+
+setInterval(changeText, 3000);
