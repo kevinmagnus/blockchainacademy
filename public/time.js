@@ -73,7 +73,7 @@ function show_website_creation_days() {
 
     const days = calculate_date_created();
 
-    date_show.innerHTML = "Chigemezu Emmanuel wrote the computer code that powers this website "+ days +" days ago.";
+    date_show.innerHTML = "Website coded "+ days +" days ago.";
 
 
 
