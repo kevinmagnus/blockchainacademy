@@ -17,12 +17,12 @@ function greet() {
 
     const current_time = new Date().getHours();
 ;
-if( (current_time >= 0) & (current_time < 12) ) {
+if( (current_time >= 0) && (current_time < 12) ) {
 
 
     greeting_heading.innerHTML = "Good morning! Welcome to HitBank.com.";
 
-}else if( (current_time >= 12) & (current_time <= 16) ) {
+}else if( (current_time >= 12) && (current_time <= 16) ) {
 
    
    greeting_heading.innerHTML = "Good afternoon! Welcome to HitBank.com."; 
