@@ -92,38 +92,18 @@ Hit Bank.com 2025
 </div>
 <script>
 
+function getTime() {
+
         const time = document.getElementById("head-1");
+time.innerHTML = Date();
+
+setTimeout(getTime, 1000);
 
 
-        function greet() {
+}
 
+getTime();
 
-            const hour = new Date().getHours();
-
-
-            if( hour >= 0 && hour <= 4 )  {
-
-
-                console.log("It's a new day! Welcome to our website.");
-
-            }else if( hour > 4 && hour < 12 ) {
-
-
-                console.log("Hello, Good morning! Welcome to our website.");
-
-            }else if(hour >= 12 && hour < 16) {
-
-            console.log("Hello, Good Afternoon! Welcome to our website.");
-
-            }else{
-
-                console.log("Hello, Good Evening! Welcome to our website.");
-            }
-
-        }
-
-        greet();
-
-    </script>
+  </script>      
 </body>
 </html>
