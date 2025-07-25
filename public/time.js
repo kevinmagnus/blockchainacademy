@@ -20,17 +20,17 @@ function greet() {
 if( (current_time >= 0) & (current_time < 12) ) {
 
 
-    greeting_heading.innerHTML = "Good morning! Welcome to our website.";
+    greeting_heading.innerHTML = "Good morning! Welcome to HitBank.com.";
 
 }else if( (current_time >= 12) & (current_time <= 16) ) {
 
    
-   greeting_heading.innerHTML = "Good afternoon! Welcome to our website."; 
+   greeting_heading.innerHTML = "Good afternoon! Welcome to HitBank.com."; 
 
 
 }else{
 
-    greeting_heading.innerHTML = "Good evening! Welcome to our website.";
+    greeting_heading.innerHTML = "Good evening! Welcome to HitBank.com.";
 
 }
 
