@@ -22,7 +22,7 @@ if( (current_time >= 0) && (current_time < 12) ) {
 
     greeting_heading.innerHTML = "Good morning! Welcome to HitBank.com.";
 
-}else if( (current_time >= 12) && (current_time <= 16) ) {
+}else if( (current_time >= 12) && (current_time <= 15) ) {
 
    
    greeting_heading.innerHTML = "Good afternoon! Welcome to HitBank.com."; 
@@ -52,12 +52,11 @@ function calculate_date_created() {
 
     const today = new Date();
 
-    const diffTime = Math.abs(today-website_creation_date);
+    const diffTime = Math.abs(today - website_creation_date);
 
     const diffDays = Math.floor(diffTime/ (1000*60*60*24) );
 
     return diffDays;
-
 
 
 
@@ -91,7 +90,7 @@ const texts = [
     "From Emmanuel Chigemezu, The Guru Behind the Code",
     "...We are the music bank!",
     "Download all your music here!",
-    "Have wonderful experience!"
+    "Have a wonderful experience."
 
 
 ];
@@ -111,3 +110,6 @@ function changeText() {
 changeText();
 
 setInterval(changeText, 3000);
+
+
+

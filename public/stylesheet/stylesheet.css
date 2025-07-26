@@ -103,3 +103,40 @@ position: left;
     80% { opacity: 1;}
     100% {opacity: 0;}
 }
+
+
+#chat {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.message {
+  margin: 5px 0;
+}
+
+.system-message {
+  color: gray;
+  font-style: italic;
+}
+
+#users {
+  float: right;
+  width: 200px;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+}
+
+#user-list {
+  list-style: none;
+  padding: 0;
+}

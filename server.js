@@ -3,8 +3,15 @@ import path from "path";
 import ejs from "ejs";
 import bodyParser from "body-parser";
 
+
+
+
 const _dirname = path.resolve();
 const app = express();
+
+
+
+
 const port = process.env.PORT || 3800;
 
 
@@ -39,9 +46,28 @@ app.get("/create-account", (req, res) => {
 
 app.post("/create-account", (req,res) => {
 
+
+
 const { first_name, last_name, email, dateOfBirth, password } = req.body;
 
+
+
+const err = document.getElementById("error");
+
+if(password.length < 8) {
+
+
+err.innerHTML = "Your password is too weak. Please use a password at least 8 characters long.";
+
+err.style.color = "red";
+
+
+
+}else{
+
 res.render("dashboard", { user_name: first_name } );
+
+}
 
 
 } );
@@ -80,9 +106,22 @@ const { first_name, email, password } = req.body;
 
 
 
+
+
+
 app.listen(port, "0.0.0.0",() => {
 
     console.log(`Server is running on port ${port}.`);
 
 
 });
+
+
+
+
+
+
+
+
+
+
